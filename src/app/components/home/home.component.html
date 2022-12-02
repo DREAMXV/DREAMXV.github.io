@@ -1,0 +1,26 @@
+<div>
+    <div class="hero-img">
+        <app-navbar (navAnimationDone)="animationState = $event"></app-navbar>
+        <section *ngIf="animationState == 'done'" class="home-page"  [@heroAnimate] (@heroAnimate.start)="animationStart($event)">
+            <div class="home-content">
+                <h1 class="hero-item intro-text">Hi, My name is</h1>
+                <h1 class="hero-item name-tag ">Sai Hlaing Han Le</h1>
+                <h1 class="hero-item role-heading">Welcome to my website.
+                    <!-- <span class="typed-element"></span>   -->
+                </h1>
+
+                <div class="hero-item infos">
+                    <a href="https://github.com/SaiHlaingHanLe" target="_blank" class="fa-icon"><fa-icon [icon]="faGit"></fa-icon></a>
+                    <a href="https://www.linkedin.com/in/sai-hlaing-han-le-500329259/" target="_blank" class="fa-icon"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                    <a href="mailto: saihlainghanle12@gmail.com" target="_blank" class="fa-icon"><fa-icon [icon]="faEmail"></fa-icon></a>        
+                </div>
+                <div class="resume hero-item">
+                    <a href="../../../assets/Resume.pdf" target="_blank" rel="icon" class="resume-btn">Resume</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <app-about></app-about>
+    <app-projects></app-projects>
+    <app-contacts></app-contacts>
+</div>

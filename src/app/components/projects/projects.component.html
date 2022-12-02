@@ -1,0 +1,54 @@
+<div class="nav-scroll-adjust" id="hobbies"></div>
+<div class="project-section">
+    <div class="title">
+        <h1>Hobbies</h1>
+    </div>
+        <div class="project-wrapper">
+            <div class="project-card" appScrollDirective (appear)="onAppear(0)" [@aboutAnimate]="display[0]">
+                <img src="../../../assets/images/culture.JPG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Photography</h5>
+                    <!-- <div class="technologies">
+                        <span>Angular2+</span>
+                        <span>TypeScript</span>
+                        <span>Chart.js</span>
+                        <span>API</span>
+                        <span>Responsive</span>
+                    </div> -->
+                    <!-- <h5>This website displays COVID-19 data by worldwide, country and states in each country.</h5>
+                    <h5></h5> -->
+                </div>
+            </div>
+            <div class="project-card"  appScrollDirective (appear)="onAppear(1)" [@aboutAnimate]="display[1]">
+                <img src="../../../assets/images/pet.JPG" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Pet</h5>
+<!--                  
+                    <h5>Multiplayer Tic-tac-toe with different game modes implemented using HTML, CSS and Javascript. </h5>
+                    <h5>Difficulty 3 AI is implemented using MiniMax Algorithm, thus making it unbeatable</h5> -->
+                </div>
+            </div>
+            <div class="project-card"  appScrollDirective (appear)="onAppear(2)" [@aboutAnimate]="display[2]">
+                <video width="320" height="240" class="card-img-top" controls>
+                    <source src="../../../assets/images/1.mp4" type="video/mp4">
+                    <source src="../../../assets/images/1.mp4" type="video/ogg">
+                  </video>
+                <div class="card-body">
+                    <h5 class="card-title">Videography</h5>
+                    <!-- <h5>Hex Board game website implemented using HTML, CSS and Javascript.</h5>
+                    <h5>Win Checking is implemented using Backtracking algorithm.</h5> -->
+                </div>
+            </div>
+            <!-- <div class="project-card"  appScrollDirective (appear)="onAppear(2)" [@aboutAnimate]="display[2]">
+                <video width="320" height="240" class="card-img-top" controls>
+                    <source src="../../../assets/images/1.mp4" type="video/mp4">
+                    <source src="../../../assets/images/1.mp4" type="video/ogg">
+                  </video>
+                <div class="card-body">
+                    <h5 class="card-title">Sports</h5>
+                    <h5>Hex Board game website implemented using HTML, CSS and Javascript.</h5>
+                    <h5>Win Checking is implemented using Backtracking algorithm.</h5>
+                </div>
+            </div> -->
+        </div>
+    </div>

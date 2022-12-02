@@ -1,0 +1,12 @@
+
+
+
+    <app-loading *ngIf="showLoading"  (loading)="showLoading = $event"></app-loading>
+    <!-- <app-navbar></app-navbar> -->
+
+<!-- <ng-template [ngTemplateOutlet]="!showLoading" [ngOutletContext]="context"></ng-template> -->
+<!-- <ng-template #template> -->
+    <ng-container *ngIf="!showLoading">
+        <router-outlet></router-outlet>
+    </ng-container>
+<!-- </ng-template> -->

@@ -1,0 +1,9 @@
+<nav (@navAnimate.done)="animationDone($event)" [@navAnimate] [ngClass]="{'color': isScrolled, 'fixed': displayNav}">
+    <div class="logo nav-item">
+    </div>
+    <ul>
+        <li class="nav-item" [ngClass]="[url === '#about' ? 'active' : '']"><a href="#about">About</a></li>
+        <li class="nav-item" [ngClass]="[url === '#contacts' ? 'active' : '']"><a href="#contacts">Contact</a></li>
+        <li class="nav-item" [ngClass]="[url === '#projects' ? 'active' : '']"><a href="#hobbies">Hobbies</a></li>
+    </ul>
+</nav>
